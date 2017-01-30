@@ -1,0 +1,17 @@
+backbone_widget:
+  version: 1.x
+  css:
+    component:
+      style/todostyles.css: {weight: 100, cache: false}
+  js:
+    js/backbone.localStorage-min.js: {}
+    js/model.js: {}
+    js/collection.js: {}
+    js/view.js: {}
+    js/viewItem.js: {}
+    js/router.js: {}
+    js/app.js: {}
+  dependencies:
+    - core/jquery
+    - core/undescore
+    - core/backbone

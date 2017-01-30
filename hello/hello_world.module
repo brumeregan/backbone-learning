@@ -1,0 +1,10 @@
+<?php
+
+function hello_world_theme() {
+    $theme['hello_page'] = [
+        'variables' => ['name' => NULL],
+        'template' => 'hello',
+    ];
+
+    return $theme;
+}

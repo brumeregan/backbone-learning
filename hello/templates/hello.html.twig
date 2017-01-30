@@ -1,0 +1,41 @@
+{{ attach_library('hello_world/backbone_widget') }}
+
+<div>
+    <div id="todoapp" data-aaa="mmmm">
+        <h1 class="todoapp__header">Todo list from template</h1>
+
+        {#form of adding task#}
+
+            <input type="text" id="new-todo" class="todo__input--new" placeholder="what needs to be done?" autofocus>
+            <button class="todo__submit" id="button--submit">Add +</button>
+
+        {#Links for router#}
+        <div>
+            <a href="#all">show all</a> |
+            <a href="#pending">show pendings</a> |
+            <a href="#completed">show completed</a>
+        </div>
+
+        {#here list of all tasks#}
+
+        <section id="main">
+            <input type="checkbox" class="toggle-all" id="toggle-all">
+            <label for="toggle-all">Mark all as completed</label>
+
+            <ul id="todo-list" class="todo__list"></ul>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+
+    <script type="text/template" id="item-template">
+        <div class="view">
+            <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %> >
+            <label class="todo__label"><%- title %></label>
+            <input class="edit" value="<%- title %>">
+            <button class="destroy todo__remove">
+                Remove
+            </button>
+        </div>
+    </script>
+
+</div>

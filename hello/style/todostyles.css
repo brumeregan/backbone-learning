@@ -1,0 +1,107 @@
+/*Overriding of common styles*/
+
+.main-content {
+    width: 100%;
+}
+
+.todoapp__header {
+    color: #0ff;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.todo__input--new {
+    width: 400px;
+    height: 40px;
+    padding: 5px 5px 5px 25px;
+    border: 0;
+    box-shadow: 0 0 5px #ccc;
+    outline: none;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.todo__submit {
+    height: 40px;
+    width: 70px;
+    border: 0;
+    margin: 0;
+    margin-left: -2px;
+    box-shadow: 0 0 5px #ccc;
+    background: transparent;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.todo__submit:hover {
+    background: #98ee33;
+}
+
+.todo__list {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.todo__list li {
+    width: 460px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.view {
+    font-size: 18px;
+}
+
+.todo__label {
+    position: relative;
+    margin-right: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*.todo__label:after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*bottom: 0;*/
+    /*!*width: calc(100% + 10px);*!*/
+    /*height: 2px;*/
+    /*background-color: #e3e3e3;*/
+/*}*/
+
+.todo__remove {
+    height:20px;
+    padding-right: 10px;
+    margin-top: 3px;
+    float: right;
+    background: url('../img/close-cross.svg') no-repeat center center;
+    background-size: 10px 10px;
+    font-size: 0px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#todoapp {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#todo-list .view input,
+#todo-list .view label {
+    display: inline-block;
+}
+
+#todo-list input.edit {
+    display: none; /* Hides input box*/
+}
+#todo-list .editing label {
+    display: none; /* Hides label text when .editing*/
+}
+#todo-list .editing input.edit {
+    display: inline; /* Shows input text box when .editing*/
+}
